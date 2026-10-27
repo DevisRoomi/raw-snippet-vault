@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  ::selection {
+    background-color: #141312;
+    color: #F7F5F0;
+  }
+
+  code, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer components {
+  .btn-raw {
+    @apply border border-ink bg-paper px-3 py-1.5 text-xs font-mono font-bold tracking-tight transition-all duration-100 hover:bg-ink hover:text-paper active:translate-x-[1px] active:translate-y-[1px] active:shadow-raw-press shadow-raw select-none cursor-pointer;
+  }
+
+  .btn-raw-solid {
+    @apply border border-ink bg-ink text-paper px-3.5 py-1.5 text-xs font-mono font-bold tracking-tight transition-all duration-100 hover:bg-ink-light active:translate-x-[1px] active:translate-y-[1px] shadow-raw select-none cursor-pointer;
+  }
+
+  .card-raw {
+    @apply border border-ink bg-paper-sheet transition-all duration-150 hover:border-ink;
+  }
+
+  .tag-raw {
+    @apply inline-block border border-ink/40 bg-paper-aged px-2 py-0.5 text-[10px] font-mono tracking-tight text-ink-light;
+  }
+}

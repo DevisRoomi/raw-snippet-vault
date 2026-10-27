@@ -1,0 +1,10 @@
+{
+  "name": "raw-snippet-vault",
+  "private": true,
+  "scripts": {
+    "dev:backend": "cd backend && bun run dev",
+    "dev:frontend": "cd frontend && bun run dev",
+    "build": "cd frontend && bun run build",
+    "test": "cd backend && bun test"
+  }
+}
